@@ -1,9 +1,9 @@
 # prerender-apache
 This is the Prerender.io middleware configuration for an Apache server to allow Google (and other crawlers) to crawl your javascript website.
 
-The `http.conf` and `.htaccess` in this repository are full files for reference, but I will discuss the modifications made to each file here.
+The `httpd.conf` and `.htaccess` in this repository are full files for reference, but I will discuss the modifications made to each file here.
 
-# http.conf
+# httpd.conf
 Uncomment these lines to allow the rewrite in `.htaccess` and to allow the proxy over https:
 ```
 LoadModule headers_module libexec/apache2/mod_headers.so
